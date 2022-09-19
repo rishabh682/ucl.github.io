@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Roboto+Condensed:wght@300&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Condensed:wght@300&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+        <title>
+            uefa
+
+        </title>
+      
+        <style>
+           body{
+               
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,1)),url("ucl-images/DrbCuKQWsAE4zpJ.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 1000px;
+            
+            
+         }
+           
+   
+.header{
+   background-image: linear-gradient(white,silver);
+   z-index: 100;
+   flex-direction: row;
+   justify-content: space-between;
+   display: flex;
+   margin-top: 0;
+   padding: 0;
+   
+}
+.left-section{
+   
+   margin-right: 130px;
+   margin-left: 0px;
+   height: 40px;
+   width: 700px;
+   display: flex;
+   align-items: center;
+   
+   
+}
+.right-section{
+   display: flex;
+   height:50px;
+   width: 1200px;
+   justify-content: space-between;
+   align-items: center;
+  
+   
+}
+.uefa{
+  height: 20px ;
+  margin-left: 4px;
+}
+.uefa:hover{
+   cursor: pointer;
+}
+.uefa-container .tooltip{
+  position: absolute;
+   background-color: gray;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 3px;
+   padding-right: 3px;
+   font-family: Roboto;
+   border-style: solid;
+   border-color: black;
+   border-width: 1px;
+  opacity: 0;
+  z-index: 2;
+  
+  bottom: -30px;
+  
+}
+.uefa-container:hover .tooltip{
+   opacity: 1;
+   transition: 0.6s;
+}
+.uefa-container{
+   justify-content: center;
+   position: relative;
+   display: flex;
+}
+
+.logo{
+   background-color: transparent;
+   border: none;
+   padding-left: 9px;
+   padding-right: 9px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 5px;
+   display: inline-block;
+}
+
+
+
+.logo:hover{
+   background-image:linear-gradient(blue,#00088E);
+   color:white;
+   transition: 0.4s;
+   cursor: pointer;
+}
+.logo-hamburger:hover{
+   background-color: yellow;
+   border: none;
+   padding-left: 6px;
+   padding-right: 6px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 5px;
+   transition: 0.4s;
+   cursor: pointer;
+}
+.login{
+   height: 18px;
+}
+.rs{
+   
+   height: 50px;
+   width: 120px;
+   margin-right: 0px;
+   border-right: solid;
+   border-width: 1px;
+   border-color: gray;
+   font-family: Roboto;
+   font-size: 17px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .rs-extended{
+   width: 170px;
+   margin-right: 0px;
+   border-right: solid;
+   border-width: 1px;
+   border-color: gray;
+   font-family: Roboto;
+   font-size: 14px;
+   display: flex;
+   height: 50px;
+   align-items: center;
+   
+   justify-content: center;
+ }
+ .hamburger{
+   height: 20px;
+ }
+ 
+ .rs-shrinked{
+   width: 50px;
+   margin-right: 0px;
+   border-right: solid;
+   border-width: 1px;
+   border-color: gray;
+   font-family: Roboto;
+   font-size: 14px;
+   display: flex;
+   height: 50px;
+   align-items: center;
+   
+   justify-content: center;
+ }
+ .ucl-top{
+    height: 80px;
+ }
+ .ucl-logo{
+  margin-top: 10px;
+  margin-left: 713px;
+  display: flex;
+ }
+ .fav{
+    margin-top: -60px;
+    margin-left: 40px;
+ }
+ .fav-club{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: white;
+    font-family: Roboto;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+   border-radius: 25px;
+
+ }
+ .fav-club:hover{
+   color: #deedf1;
+    cursor: pointer;
+    transition: 
+    0.5s;
+    opacity: 0.6;
+ }
+ nav{
+     height: 21vh;
+     width: 100%;
+     min-width: 800px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin: auto;
+     
+ }
+ a{
+    position: relative;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 19px;
+    letter-spacing: 0.6px;
+    padding: 0 10px;
+    color: rgb(220, 216, 216);
+}
+a:after{
+    content: "";
+    background-color: #6b72f8;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -12px;
+    transition: 0.5s;
+    opacity: 0;
+
+}
+a:hover:after{
+    width: 100%;
+    opacity: 1;
+    
+}
+a:hover{
+    color: white;
+}
+.totw{
+    height: 680px;
+    width: 450px;
+    background-color: #00088E;
+    margin-top: 30px;
+    margin-left: 20px;
+    opacity: 0.8;
+    border-radius: 7px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    display: inline-block;
+  
+
+}
+.totw-up{
+    height: 230px;
+    width: 100%;
+    background-image:linear-gradient(rgb(3, 20, 77),rgb(17, 2, 2));
+    opacity: 1;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    justify-content: center;
+    position: relative;  
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)),url("ucl-images/ucl2.svg");
+    background-size: 500px;
+    background-position-x: left;
+    background-repeat: no-repeat;
+
+  }
+  
+    
+  
+.totw-container{
+    height: 190px;
+    width: 150px;
+    margin-top: 35px;
+    position: absolute;
+    margin-left: 50px;
+}
+.team,.of,.the,.week{
+    font-family: bebas neue;
+    font-size: 70px;
+    color: white;
+}
+.of,.the{
+    font-size: 30px;
+    margin-top: 3px;
+    line-height: 30px
+
+}
+.week{
+    margin-top: 3px;
+    line-height: 45px;
+}
+.team{
+    line-height: 40px;
+    
+}
+.totw-down{
+    height: 450px;
+    width: 100%;
+   
+}
+.vertical-line1{
+    height: 119px;
+    width: 2px;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 25%;
+    display: flex;
+}
+.vertical-line2{
+    height: 125px;
+    width: 1.5px;
+    background-color: white;
+    margin-top: -125px;
+    margin-left: 76.5%;
+    margin-right: 50px;
+    display: flex;
+}
+.horizontal-line1{
+    width: 51.8%;
+    height: 1.5px;
+    background-color: white;
+    margin-top:0px;
+    
+    margin-left: 25%;
+    display: flex;
+}
+.vertical-line3{
+    height: 50px;
+    width: 1.5px;
+    background-color: white;
+    margin-top: -120px;
+    margin-left: 38%;
+   display: flex;
+}
+.vertical-line4{
+    height: 50px;
+    width: 1.5px;
+    background-color: white;
+    margin-top: -50px;
+    margin-left: 63.5%;
+   display: flex;
+}
+.horizontal-line2{
+    width: 25.8%;
+    height: 1.5px;
+    background-color: white;
+    margin-top:0px;
+    
+    margin-left: 38%;
+    display: flex;
+}
+
+.profile{
+    height: 93px;
+    width: 78px;
+    background-color: transparent;
+    display: inline-block;
+    margin-left: 42%;
+    margin-top: -8%;
+    opacity:100;
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.lewandowski,.benzema,.haaland,.jude,.alvarez,.mount,.cancelo,.robertson,.kounde,.james,.courtois{
+    height: 78px;
+    width: 78px;
+    opacity: 1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+.profile:hover{
+    background-color: aquamarine;
+    transition:0.5s;
+}
+.name,.name1,.name2,.name3,.name4,.name5,.name6,.name7,.name8,.name9,.name10{
+    color:white;
+    background-image:conic-gradient(rgb(82, 82, 198),#00088e);
+    font-size: 10px;
+    font-family: Roboto;
+    text-align: center;
+    letter-spacing: 0.25px;
+    height: 19px;
+    width: 130%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: -15%;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: aquamarine;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 7px;
+    
+}
+.profile1{
+    height: 93px;
+    width: 78px;
+    display:block;
+    margin-left: 10%;
+    margin-top: -22%;
+    opacity:1;
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.profile1:hover{
+    background-color: #4dffff;
+    transition:0.5s;
+}
+.profile2{
+    height: 93px;
+    width: 78px;
+    display:block;
+    margin-left: 74%;
+    margin-top: -20%;
+    opacity:1;
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile2:hover{
+    background-color: aquamarine;
+    transition:0.5s;
+}
+.profile3{
+    height: 93px;
+    width: 78px;
+    background-color: transparent;
+    display: inline-block;
+    margin-left: 42%;
+    margin-top: 20px;
+    opacity:100;
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.profile3:hover{
+    background-color: aquamarine;
+    transition:0.5s;
+}
+.profile4{
+    height: 93px;
+    width: 78px;
+    display:block;
+    margin-left: 74%;
+    margin-top: -21.5%;
+    opacity:1;
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.profile4:hover{
+    background-color: aquamarine;
+    transition:0.5s; 
+}
+.profile5{
+    height: 93px;
+    width: 78px;
+    display:block;
+    margin-left: 10.5%;
+    margin-top: -20.5%;
+    opacity:1;
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.profile5:hover{
+    background-color: aquamarine;
+    transition:0.5s; 
+}
+.profile6{
+    height: 93px;
+    width: 78px;
+    display:inline-block;
+    margin-left: 2.5%;
+    margin-top: 4.5%;
+    opacity:1;
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.profile6:hover{
+    background-color: aquamarine;
+    transition:0.5s; 
+} 
+.profile7{
+    height: 93px;
+    width: 78px;
+    display:inline-block;
+    margin-left: 7.5%;
+    margin-top: 4.5%;
+    opacity:1;
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.profile7:hover{
+    background-color: aquamarine;
+    transition:0.5s; 
+} 
+.profile8{
+    height: 93px;
+    width: 78px;
+    display:inline-block;
+    margin-left: 8.5%;
+    margin-top: 4.5%;
+    opacity:1;
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.profile8:hover{
+        background-color: aquamarine;
+        transition:0.5s; 
+}
+.profile9{
+    height: 93px;
+    width: 78px;
+    display:inline-block;
+    margin-left: 6.5%;
+    margin-top: 4.5%;
+    opacity:1;
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
+.profile9:hover{
+    background-color: aquamarine;
+    transition:0.5s;
+}
+.profile10{
+    height: 93px;
+    width: 78px;
+    display:inline-block;
+    margin-left: 42.5%;
+    margin-top: 4.5%;
+    opacity:1;
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.profile10:hover{
+    background-color: aquamarine;
+    transition:0.5s;
+}
+.news-section{
+    display: flex;
+    height: 660px;
+    width: 800px;
+    background-image:linear-gradient(white,gray) ;
+    margin-left: 130%;
+    margin-top: -670px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:white;
+}
+.news-section:hover{
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #4dffff;
+
+}
+.klopp-wins{
+    height: 660px;
+    width: 600px;
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 4px;
+}
+.klopp{
+    height: 660px;
+    width: 450px;
+    margin-top: 0;
+    margin-left: 0;
+    z-index: 80;
+}
+.news-headline{
+    display: flex;
+    font-family: bebas neue;
+    font-size: 54px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: -160px;
+    color: rgb(241, 235, 235);
+    word-spacing: 8px;
+}
+.news-headline2{
+    display: flex;
+    font-family: bebas neue;
+    font-size: 40px;
+    font-weight: 300;
+    margin-left: 190px;
+    margin-top: -60px;
+    color: rgb(255, 255, 255);
+    word-spacing: 8px;
+}
+.news-read{
+    display: flex;
+    height: 660px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    background-color:transparent;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.news-read1{
+    padding-top: 10px;
+    padding-left:15px;
+    padding-right: 20px;
+    line-height: 20px;
+    font-family: montserrat;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    
+}
+
+        </style>
+        <body>
+            <div>
+                <div class="header">
+                    <div class="left-section">
+                        <div class="uefa-container">
+                            <img class="uefa" src="ucl-images/uefa-logo-black.svg">
+                            <div class="tooltip">uefa.com
+
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+                    <div class="right-section">
+                        <div class="rs">
+                           <div class="logo"> Inside-uefa</div>
+                           
+                        </div>
+                        <div class="rs">
+                            <div class="logo">UEFA.tv</div>
+                        </div>
+                        <div class="rs">
+                            <div class="logo">Live Scores</div>
+                        </div>
+                        <div class="rs-extended">
+                            <div class="logo">Tickets & Hospitality</div>
+                        </div>
+                        <div class="rs">
+                            <div class="logo">Store</div>
+                        </div>
+                        <div class="rs">
+                            <div class="logo">Login</div>
+                            
+                        </div>
+                        <div class="rs">
+                            <div class="logo">All-sections</div>
+                        </div>
+                        <div class="rs-shrinked">
+                            <div class="logo-hamburger"><img class="hamburger" src="ucl-images/hamburger.webp"></div>
+                        </div>
+
+                        
+                     </div>
+                    
+                    
+                </div>
+                    <div class="ucl-logo">
+                    <img  class="ucl-top" src="ucl-images/ucl2.svg" >
+                    </div>
+                    <div class="fav">
+                        <button class="fav-club">favoutite club +</button>
+                    </div>
+
+                   
+                </div>
+                 <nav>
+                    <a href="#latest">Latest</a>
+                    <a href="#fixtures">Fixtures</a>
+                    <a href="#results">Results</a>
+                    <a href="#groups">Groups</a>
+                    <a href="#draws">Draws</a>
+                    <a href="#clubs">Clubs</a>
+                    <a href="#stats">Stats</a>
+                    <a href="#gaming">Gaming</a>
+                    <a href="#history">History</a>
+                    <a href="#about">About</a>
+                    <a href="#store">Store</a>
+                    
+                 </nav>
+                 
+                 <div class="totw">
+                    <div class="totw-up">
+                        <div class="totw-container">
+                            
+                        <div class="team">TEAM</div>
+                        <div class="of">OF</div>
+                        <div class="the">THE</div>
+                        <div class="week">WEEK</div>
+                        </div>
+                    </div>
+                     <div class="totw-down">
+                        <div class="vertical-line1"></div>
+                        <div class="vertical-line2"></div>
+                        <div class="horizontal-line1"></div>
+                        <div class="vertical-line3"></div>
+                        <div class="vertical-line4"></div>
+                        <div class="horizontal-line2"></div>
+                        
+                        <div class="profile">
+                            <img class="lewandowski" src="ucl-images/barca kit.png">
+                            <div class="name">LEWANDOWSKI</div>
+                        </div>
+                        <div class="profile1">
+                            <img class="benzema" src="ucl-images/realmadrid-kit.png">
+                            <div class="name1">BENZEMA</div>
+                        </div>
+                        <div class="profile2">
+                            <img class="haaland" src="ucl-images/mancity-kit.png">
+                            <div class="name2">HAALAND</div>
+                        </div>
+                        <div class="profile3">
+                            <img class="jude" src="ucl-images/dortmund-kit.png">
+                            <div class="name3">BELLINGHAM</div>
+                        </div>
+                        <div class="profile4">
+                            <img class="alvarez" src="ucl-images/ajax-kit.png">
+                            <div class="name4">ALVAREZ</div>
+                        </div>
+                        <div class="profile5">
+                            <img class="mount" src="ucl-images/chelsea-kit.png">
+                            <div class="name5">MOUNT</div>
+                        </div>
+                        <div class="profile6">
+                            <img class="cancelo" src="ucl-images/mancity-kit.png">
+                            <div class="name6">CANCELO</div>
+                        </div>
+                        <div class="profile7">
+                            <img class="robertson" src="ucl-images/liverpool-kit.png">
+                            <div class="name7">ROBERTSON</div>
+                        </div>
+                        <div class="profile8">
+                            <img class="kounde" src="ucl-images/barca kit.png">
+                            <div class="name8">KOUNDE</div>
+                        </div>
+                        <div class="profile9">
+                            <img class="james" src="ucl-images/chelsea-kit.png">
+                            <div class="name9">JAMES</div>
+                        </div>
+                        <div class="profile10">
+                            <img class="courtois" src="ucl-images/courtois-kit.png">
+                            <div class="name10">COURTOIS</div>
+                        </div>
+                 </div>
+                   <div class ="news-section">
+                    <div class="news-image">
+                        <img class="klopp" src="ucl-images/klopp-wins2.jpg">
+                        <p class="news-headline"> " WE ARE READY "</p>
+                        <p class="news-headline2"> -says klopp</p>
+                    </div>
+                    <div class="news-read">
+                        <p class="news-read1">Looking relaxed and sounding upbeat after a short summer break, 
+                            Klopp told ESPN that he is planning for the present and the future after winning
+                             two of a possible four trophies last season. The former Borussia Dortmund coach
+                              who signed a new contract until 2026 earlier this year, also discussed his vision of 
+                              Liverpool after he leaves the club.
+
+                        But with the new season set to start in less than four weeks' time --
+                             and with a World Cup wedged in the middle, from Nov. 21 to Dec. 18 -- 
+                             Klopp says that the season ahead will be a challenge on and off the pitch 
+                             as several teams are ready to compete for honours.
+                             The Reds have 10 days' respite before opening their Champions League round-of-16 
+                             tie at home to Bayern Munich on September 19 and then close out the month with league
+                              fixtures away to Manchester United and at home to Watford.</p>
+                    </div>
+                   </div>
+                       
+            </div>
+            
+        </body>
+    </head>
+</html>
